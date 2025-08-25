@@ -15,19 +15,19 @@ on:
 
       CLIENT_IMPL:
         type: string
-        description: 客户端类型（client.impl），下载失败时，你可以尝试填入此项重试。'api' 表示移动端，'html' 表示网页端。
+        description: api
         default: ''
-        required: false
+        required: true
 
       IMAGE_SUFFIX:
         type: string
-        description: 图片后缀（download.cache.suffix），默认为空，表示不做图片格式转换。可填入例如 'png' 'jpg'
+        description: png
         default: ''
         required: false
 
       DIR_RULE:
         type: string
-        description: 下载文件夹规则（dir_rule.rule）。默认使用配置文件的 'Bd_Aauthor_Atitle_Pindex'。
+        description: Bd_Aauthor_Atitle_Pindex
         default: ''
         required: false
 
@@ -46,13 +46,13 @@ on:
 #      JM_USERNAME:
 #        type: string
 #        default: ''
-#        description: '禁漫帐号（不建议使用，用户名和密码会泄露在日志中。最好用secrets）'
+#        description: secrets
 #        required: false
 #
 #      JM_PASSWORD:
 #        type: string
 #        default: ''
-#        description: '禁漫密码（不建议使用，用户名和密码会泄露在日志中。最好用secrets）'
+#        description: secrets
 #        required: false
 
 
